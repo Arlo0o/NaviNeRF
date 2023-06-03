@@ -46,8 +46,9 @@ Run `evaluation.py` for NaviNeRF evaluation.
 Here are some Fine-grained 3D Disentanglement Results of NaviNeRF:
 ![An image](./images/results.jpg)
 
-```
 ## Reference
+If you find this project useful in your research, please consider cite:
+```
 @misc{xie2023navinerf,
       title={NaviNeRF: NeRF-based 3D Representation Disentanglement by Latent Semantic Navigation}, 
       author={Baao Xie and Bohan Li and Zequn Zhang and Junting Dong and Xin Jin and Jingyu Yang and Wenjun Zeng},
@@ -57,7 +58,7 @@ Here are some Fine-grained 3D Disentanglement Results of NaviNeRF:
       primaryClass={cs.CV}
 }
 ```
-## Credits
+## Acknowledgements
 Stylenerf code and weights are based on the authors implementation:
 https://github.com/facebookresearch/StyleNeRF/tree/main
 
