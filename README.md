@@ -28,9 +28,13 @@ pip install -r requirements.txt
 
 
 ## Train a new NaviNeRF model
+
+Here is a simple example of navinerf run command:
 ```bash
-python run_train.py outdir=${OUTDIR} deformator ortho seed=${seed} gan_type=nerfgan
+python run_train.py gan_type=nerfgan outdir=${OUTDIR} deformator=ortho seed=${seed} 
 ```
+This script will save the latent space directions and images charts with latent directions. Please check more arguments of parameters in `trainer.py`.
+
 ## Evaluation
 
 Run `evaluation.py` for NaviNeRF evaluation.
