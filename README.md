@@ -29,11 +29,11 @@ pip install -r requirements.txt
 
 ## Train a new NaviNeRF model
 
-Here is a simple example of navinerf run command:
+Here is a simple example of navinerf run command
 ```bash
 python run_train.py gan_type=nerfgan outdir=${OUTDIR} deformator=ortho seed=${seed} 
 ```
-This script will save the latent space directions and images charts with latent directions. Please check more arguments of parameters in `trainer.py`.
+You can download Stylenerf pre-train model from[Hugging Face 🤗](https://huggingface.co/facebook/stylenerf-ffhq-config-basic/blob/main/ffhq_256.pkl). The script will save the latent space directions and images charts with latent directions. Please check more arguments of parameters in `trainer.py`.
 
 ## Evaluation
 
@@ -55,6 +55,10 @@ Here are some Fine-grained 3D Disentanglement Results of NaviNeRF:
       primaryClass={cs.CV}
 }
 ```
+## Credits
+Stylenerf code and weights are based on the authors implementation:
+https://github.com/facebookresearch/StyleNeRF/tree/main
+
 
  
  
