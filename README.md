@@ -41,7 +41,7 @@ Run `evaluation.py` for NaviNeRF evaluation.
 Here are some Fine-grained 3D Disentanglement Results of NaviNeRF:
 ![An image](./images/results.jpg)
 
-
+```
 @misc{xie2023navinerf,
       title={NaviNeRF: NeRF-based 3D Representation Disentanglement by Latent Semantic Navigation}, 
       author={Baao Xie and Bohan Li and Zequn Zhang and Junting Dong and Xin Jin and Jingyu Yang and Wenjun Zeng},
