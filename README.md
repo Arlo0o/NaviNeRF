@@ -59,10 +59,11 @@ If you find this project useful in your research, please consider cite:
 }
 ```
 ## Acknowledgements
-Stylenerf code and weights are based on the authors implementation:
+Stylenerf code based on the authors implementation:
 https://github.com/facebookresearch/StyleNeRF/tree/main
 
-
+GANLatentDiscovery code based on the authors implementation:
+https://github.com/anvoynov/GanLatentDiscovery
  
  
 
