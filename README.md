@@ -32,9 +32,9 @@ pip install -r requirements.txt
 
 Here is a simple example of NaviNeRF run command
 ```bash
-python run_train.py gan_type=nerfgan deformator=ortho outdir=${OUTDIR} seed=${seed} 
+python run_train.py gan_type=nerfgan deformator=ortho outdir=${OUTDIR} network_pkl=${PKL}  seed=${seed} 
 ```
-You can download Stylenerf pre-train model from [Hugging Face 🤗](https://huggingface.co/facebook/stylenerf-ffhq-config-basic/blob/main/ffhq_256.pkl). The script will save the latent space directions and images charts with latent directions. Please check more arguments of parameters in `trainer.py`.
+You can download Stylenerf pre-train model `ffhq_256.pkl` from [Hugging Face 🤗](https://huggingface.co/facebook/stylenerf-ffhq-config-basic/blob/main/ffhq_256.pkl). The script will save the latent space directions and images charts with latent directions. Please check more arguments of parameters in `trainer.py`.
 
 ## Evaluation
 

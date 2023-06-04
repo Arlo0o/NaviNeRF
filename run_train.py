@@ -25,9 +25,11 @@ def main():
         parser.add_argument('--{}'.format(key), type=target_type, default=None)
 
     parser.add_argument('--out', type=str, default = "output", help='results directory')
-    parser.add_argument('--gan_type', default = "nerfgan" , type=str, choices=WEIGHTS.keys(), help='_skip_mapping, nerfgan')
-    parser.add_argument('--deformator_model_path', type=str, default= None)
-    parser.add_argument('--shift_predictor_model_path', type=str, default= None) 
+    parser.add_argument('--gan_type', default = "nerfgan" , type=str, choices=WEIGHTS.keys(), help='nerfgan')
+    parser.add_argument('--deformator_model_path', type=str, default= None, help='path of deformator model')
+    parser.add_argument('--shift_predictor_model_path', type=str, default= None, help='path of shift predictor model') 
+    parser.add_argument('--network_pkl', type=str, default= None, help='path of gan model pkl')
+    parser.add_argument('--network_pkl2', type=str, default= None, help='path of gan model with skip mapping pkl') 
 
     parser.add_argument('--deformator', type=str, default='ortho',
                         choices=DEFORMATOR_TYPE_DICT.keys(), help='deformator type')
@@ -99,7 +101,7 @@ def main():
         shift_predictor.load_state_dict(  torch.load(args.shift_predictor_model_path, map_location=torch.device('cpu')))
 
         from models.gan_load import make_nerfgan_skip_mapping
-        skipping_G = make_nerfgan_skip_mapping()
+        skipping_G = make_nerfgan_skip_mapping(network_pkl=args.network_pkl2)
  
     trainer = Trainer(params, out_dir=args.out)
     trainer.train(G,  deformator, shift_predictor, multi_gpu=args.multi_gpu, skipping_G=skipping_G)

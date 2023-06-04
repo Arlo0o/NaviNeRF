@@ -12,7 +12,7 @@ from models.gan_load import make_nerfgan,make_nerfgan_skip_mapping
 def load_generator(args, G_weights):
     gan_type = args['gan_type']
  
-    G = make_nerfgan()
+    G = make_nerfgan(network_pkl=args.network_pkl)
     return G
 
 
