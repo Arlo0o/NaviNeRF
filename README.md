@@ -4,7 +4,7 @@
 
 
 
-**NaviNeRF: NeRF-based 3D Representation Disentanglement by Latent Semantic Navigation** (ICCV2023) <br>
+**NaviNeRF: NeRF-based 3D Representation Disentanglement by Latent Semantic Navigation (ICCV2023) **  <br>
 Baao Xie, Bohan Li, Zequn Zhang, Junting Dong, Xin Jin, Jingyu Yang, Wenjun Zeng<br>
 
 
